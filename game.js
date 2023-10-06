@@ -1,5 +1,5 @@
 // Iteration 2: Generating two random numbers (0 to 100) and displaying the same in the game.html
-var number1 = Math.round(Math.random() * 100);
+var number1 = Math.round(Math.random()*100);
 const number1box = document.getElementById("number1");
 
 var number2 = Math.round(Math.random() * 100);
@@ -12,7 +12,7 @@ const minus = document.getElementById("minus");
 const mul = document.getElementById("mul");
 const divide = document.getElementById("divide");
 const modulus = document.getElementById("modulus");
-// Iteration 4: Creating a variable for number 3 and a variable for storing the html element with the Id "number3"
+// Iteration 4: Creating a variable for number 3 and a variable for storing the HTML element with the Id "number3"
 var number3box = document.getElementById("number3");
 var number3;
 // Iteration 5: Creating a randomise function to make the game functional
@@ -119,10 +119,9 @@ modulus.onclick = () => {
 // Iteration 7: Making Timer functional
 var time = 20;
 var timerId;
-var timer=document.getElementById("timer");
-
+var timer = document.getElementById("timer");
 function startTimer() {
-    time =20;
+    time = 20;
     timer.innerHTML = time;
     timerId = setInterval(() => {
         time--;
